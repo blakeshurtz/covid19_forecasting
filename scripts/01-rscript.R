@@ -2,12 +2,12 @@ library(tidyverse)
 library(readxl)
 library(lubridate)
 ###import sheet manually
-usa_reg <- read_excel("D:/Google Drive/Library/Forecasting/data/reg.xlsx", sheet = "usa_reg")
-china_reg <- read_excel("D:/Google Drive/Library/Forecasting/data/reg.xlsx", sheet = "chin_reg")
-france_reg <- read_excel("D:/Google Drive/Library/Forecasting/data/reg.xlsx", sheet = "france_reg")
-italy_reg <- read_excel("D:/Google Drive/Library/Forecasting/data/reg.xlsx", sheet = "italy_reg")
-japan_reg <- read_excel("D:/Google Drive/Library/Forecasting/data/reg.xlsx", sheet = "japan_reg")
-sk_reg <- read_excel("D:/Google Drive/Library/Forecasting/data/reg.xlsx", sheet = "sk_reg")
+usa_reg <- read_excel("./data/reg.xlsx", sheet = "usa_reg")
+china_reg <- read_excel("./data/reg.xlsx", sheet = "chin_reg")
+france_reg <- read_excel("./data/reg.xlsx", sheet = "france_reg")
+italy_reg <- read_excel("./data/reg.xlsx", sheet = "italy_reg")
+japan_reg <- read_excel("./data/reg.xlsx", sheet = "japan_reg")
+sk_reg <- read_excel("./data/reg.xlsx", sheet = "sk_reg")
 
 ###start data when first death occurs
 usa_reg <- usa_reg %>% filter(y != 0)
