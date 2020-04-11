@@ -1,5 +1,5 @@
 # covid19_forecasting
-Good Judgement Project 2.0 COVID19 forecasting tournament
+[Good Judgement Project 2.0 COVID19 forecasting tournament](https://www.gjp2.org/)
 
 This repo contains the data, scripts and graphs that I'm using to forecast COVID19 mortality dates.
 
