@@ -28,3 +28,6 @@ ggplot(aes(x = as_date(date), y = y), data = sk_reg) +
   geom_segment(aes(x = cutoff_date_jp_sk[3], xend = cutoff_date_jp_sk[3], y=sk_bins$july_8[2], yend=sk_bins$july_8[3]), color = 'red') +
   geom_segment(aes(x = cutoff_date_jp_sk[3], xend = cutoff_date_jp_sk[3], y=sk_bins$july_8[3], yend=sk_bins$july_8[4]), color = 'purple') +
   geom_segment(aes(x = cutoff_date_jp_sk[3], xend = cutoff_date_jp_sk[3], y=sk_bins$july_8[4], yend=max(sk_bins)), color = 'black') 
+
+ggsave(filename = "plots/sk.jpeg", plot = last_plot(), device = "jpeg", dpi = 300,
+       width = 300, height = 150, units = "mm")

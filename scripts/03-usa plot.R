@@ -28,4 +28,7 @@ ggplot(aes(x = as_date(date), y = y), data = usa_reg) +
   geom_segment(aes(x = cutoff_date[3], xend = cutoff_date[3], y=usa_bins$june_25[2], yend=usa_bins$june_25[3]), color = 'red') +
   geom_segment(aes(x = cutoff_date[3], xend = cutoff_date[3], y=usa_bins$june_25[3], yend=usa_bins$june_25[4]), color = 'purple') +
   geom_segment(aes(x = cutoff_date[3], xend = cutoff_date[3], y=usa_bins$june_25[4], yend=max(usa_bins)), color = 'black') 
-  
+
+ggsave(filename = "plots/USA.jpeg", plot = last_plot(), device = "jpeg", dpi = 300,
+       width = 300, height = 150, units = "mm")
+
